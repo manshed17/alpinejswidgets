@@ -1,0 +1,38 @@
+.transportFare:hover, .phoneBill:hover, .greetMe:hover, .wordGame:hover{
+    background-color: yellowgreen;
+ }
+ body{
+    background-color: bisque;
+ }
+.showAmount{
+    padding: 1em;
+    margin: 1em;
+    /* background-color: yellow; */
+    font-weight: bolder;
+    font-style: italic;
+    width: fit-content;
+   color: red;
+   
+}
+.transportFare, .phoneBill, .greetMe, .wordGame{
+    background-color: lightskyblue ;
+    /* width: 50%; */
+    margin: 1em;
+    padding-bottom: 2em;
+    border-radius: 1em;
+    border: 0.5em solid;
+    flex: 1;
+}
+
+.sentence{
+    width: 80%;
+}
+
+@media(min-width: 760px) {
+.container{  
+display: flex 
+}
+}
+button:hover{
+    background-color: blanchedalmond;
+}

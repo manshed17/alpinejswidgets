@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="transportFee.js"></script>
+    <script src="expensiveItems.js"></script>
+    <script src="totalPhoneBill.js"></script>
+    <script src="greet.js"></script>
+    <script src="wordGame.js"></script>
+    <script src="WordGame-Widgets.js" defer></script>
+    <script src="transportFee-widget.js" defer></script>
+    <script src="totalPhoneBill-widget.js" defer></script>
+    <script src="greet-Widget.js"defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+  
+</head>
+<body>
+    <h1>Alpinejs WidgetS for Bootcamp Functions</h1>
+    <div class="container">
+    <div class="greetMe">
+        <div x-data="greetData">
+        <h2>Greet Widget</h2>
+       
+        <label for="greet">Enter your name</label>
+        <input type="text"x-model="name" id="greet"> <button @click="greetMe, show=true">greet</button>
+        <div class="showAmount" x-show="show" x-text="greeting">
+            greeting HERE
+
+        </div>
+          
+        </div>
+    </div>
+
+
+
+    <div class="transportFare">
+        <div x-data="transportFeeWidget">
+        <h2>Transport Fee Widget</h2>
+        <label for="shift">shift</label>
+        <input type="text"x-model="shiftTime" id="shift"> <button  @click="displayFee, show1=true">fee</button>
+
+            <div class="showAmount" x-show="show1" x-text="fee">
+               transport fare HERE
+
+            </div>
+        </div>
+    </div>
+
+
+   
+    <div class="phoneBill">
+        <div x-data="totalPhoneBillWidget">
+        <h2>Total Phone Bill Widget</h2>
+        <label for="shift">string</label>
+        <input type="text"x-model="string" id="shift"> <button @click="calculateTotal, show2=true">charge</button>
+
+            <div class="showAmount" x-show="show2" x-text="stringAmount">
+               phone bill HERE
+
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="wordGame">
+        <div x-data="WordgameWidjet">
+        <h2>Word Game Widget</h2>
+        <h3>Longest Word</h3>
+        <label for="items">type in sentence</label>
+        <input class= "sentence"type="text"x-model="wordString" id="items"> <button @click="findLongestWord, show3=true" x-show="wordString.length>0">find</button>
+
+            <div class="showAmount" x-show="show3" x-text="filteredWord">
+               longest word  HERE
+
+            </div>
+
+            <h3>Shortest Word</h3>
+            <label for="items">type in sentence</label>
+            <input class= "sentence"type="text"x-model="wordString1" id="items"> <button @click="findShortestWord, show4=true"x-show="wordString1.length>0">find</button>
+    
+                <div class="showAmount" x-show="show4" x-text="filteredWord1">
+                  shortest word   HERE
+    
+                </div>
+                <h3>Sum of Word Lengths</h3>
+                <label for="items">type in sentence</label>
+                <input class= "sentence" type="text"x-model="wordString2" id="items"> <button @click="findLength, show5=true" x-show="wordString2.length>0">find</button>
+        <div class="showAmount" x-show="show5">
+                    <div  x-text="filteredWord2">
+                      sum  HERE
+        
+                    </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
