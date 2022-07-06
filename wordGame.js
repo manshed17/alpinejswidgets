@@ -8,7 +8,9 @@ function longestWord(x){
          var word = y[i];
           
          }
-      }
+      }if (word.length===0){
+        return "string is empty"
+      }else
         return word;
     }
     
@@ -22,7 +24,9 @@ function longestWord(x){
         shortWord = y;
          
          }
-      }
+      } if (shortWord.length===0){
+        return "string is empty"
+      }else
       return shortWord;
     }
     function wordLengths(sum){

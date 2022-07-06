@@ -21,16 +21,16 @@
   
 </head>
 <body>
-    <h1>Alpinejs WidgetS for Bootcamp Functions</h1>
+    <h1>Alpinejs Widgets for Bootcamp Functions</h1>
     <div class="container">
     <div class="greetMe">
         <div x-data="greetData">
         <h2>Greet Widget</h2>
        
-        <label for="greet">Enter your name</label>
+        <label for="greet">Enter name</label>
         <input type="text"x-model="name" id="greet"> <button @click="greetMe, show=true">greet</button>
         <div class="showAmount" x-show="show" x-text="greeting">
-            greeting HERE
+            <!-- greeting HERE -->
 
         </div>
           
@@ -46,7 +46,7 @@
         <input type="text"x-model="shiftTime" id="shift"> <button  @click="displayFee, show1=true">fee</button>
 
             <div class="showAmount" x-show="show1" x-text="fee">
-               transport fare HERE
+               <!-- transport fare HERE -->
 
             </div>
         </div>
@@ -61,7 +61,7 @@
         <input type="text"x-model="string" id="shift"> <button @click="calculateTotal, show2=true">charge</button>
 
             <div class="showAmount" x-show="show2" x-text="stringAmount">
-               phone bill HERE
+               <!-- phone bill HERE -->
 
             </div>
         </div>
@@ -72,27 +72,27 @@
         <h2>Word Game Widget</h2>
         <h3>Longest Word</h3>
         <label for="items">type in sentence</label>
-        <input class= "sentence"type="text"x-model="wordString" id="items"> <button @click="findLongestWord, show3=true" x-show="wordString.length>0">find</button>
+        <input class= "sentence"type="text"x-model="wordString" id="items"> <button @click="findLongestWord, show3=true">find</button>
 
             <div class="showAmount" x-show="show3" x-text="filteredWord">
-               longest word  HERE
+               <!-- longest word  HERE -->
 
             </div>
 
             <h3>Shortest Word</h3>
             <label for="items">type in sentence</label>
-            <input class= "sentence"type="text"x-model="wordString1" id="items"> <button @click="findShortestWord, show4=true"x-show="wordString1.length>0">find</button>
+            <input class= "sentence"type="text"x-model="wordString1" id="items"> <button @click="findShortestWord, show4=true">find</button>
     
                 <div class="showAmount" x-show="show4" x-text="filteredWord1">
-                  shortest word   HERE
+                  <!-- shortest word   HERE -->
     
                 </div>
                 <h3>Sum of Word Lengths</h3>
                 <label for="items">type in sentence</label>
-                <input class= "sentence" type="text"x-model="wordString2" id="items"> <button @click="findLength, show5=true" x-show="wordString2.length>0">find</button>
+                <input class= "sentence" type="text"x-model="wordString2" id="items"> <button @click="findLength, show5=true">find</button>
         <div class="showAmount" x-show="show5">
                     <div  x-text="filteredWord2">
-                      sum  HERE
+                      <!-- sum  HERE -->
         
                     </div>
         </div>
